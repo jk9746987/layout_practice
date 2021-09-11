@@ -1,0 +1,353 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.main_container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    line-height: 1.5rem;
+}
+
+main{
+    color: white;
+    width: calc(100% - 300px);
+    /* display: flex; */
+    margin-bottom: 20px;
+    margin: 10px;
+}
+
+/* bread */
+
+main h1{
+    font-size: 2rem;
+    padding: 20px 0;
+}
+
+main .bread{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.bread p{
+    font-size: 0.5rem;
+    display: inline-block;
+}
+
+.bread a{
+    text-decoration: none;
+    color: #EFA747;
+    font-size: 0.5rem;
+}
+
+.bread a:hover{
+    color: white;
+}
+
+.bread div p{
+    display: inline-block;
+    font-size: 0.5rem;
+}
+
+.bread div{
+    display: inline-block;
+}
+
+/* first */
+
+.first_paragraph{
+    border: 1px solid #515B51;
+    display: inline-block;
+    width: 500px;
+}
+
+.first_paragraph h2{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.first_paragraph ul{
+    padding-bottom: 10px;
+}
+
+.first_paragraph ul li{
+    padding: 2px;
+    padding-left: 10px;
+}
+
+.first_paragraph ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.first_paragraph ul li a:hover{
+    color: #DAC6AC;
+}
+
+p.main_body_txt{
+    padding: 10px 0 10px 0;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    position: relative;
+    top: 10px;
+    border-top: 1px solid white;
+}
+
+/* second */
+
+.second_paragraph{
+    margin-bottom: 30px;
+}
+
+.second_paragraph h2{
+    font-size: 1.5rem;
+    padding: 10px 0 10px 0;
+    color: #CC8C66;
+}
+
+/* third */
+.third_paragraph{
+    margin-bottom: 30px;
+}
+
+.third_paragraph h2{
+    font-size: 1.5rem;
+    padding: 10px 0 10px 0;
+    color: #CC8C66;
+}
+
+/* fourth */
+.fourth_paragraph{
+    margin-bottom: 30px;
+}
+
+.fourth_paragraph h2{
+    font-size: 1.5rem;
+    padding: 10px 0 10px 0;
+    color: #CC8C66;
+}
+
+.fourth_paragraph .formula{
+    border: 1px solid white;
+    width: 550px;
+    padding-left: 20px;
+}
+
+.fourth_paragraph div.bmr p{
+    border: 1px solid white;
+    width: 600px;
+    padding: 5px;
+}
+
+.fourth_paragraph div.bmr{
+    margin-bottom: 30px;
+}
+
+.fourth_paragraph div.bmr p:first-child{
+    background-color: #5A5560;
+}
+
+.fourth_paragraph table.computer{
+    border: 1px solid white;
+    width: 700px;
+    margin-bottom: 30px;
+}
+
+.fourth_paragraph table.computer th{
+    border: 1px solid white;
+    padding: 10px 20px 10px 10px;
+    text-align: start;
+    background-color: #5A5560;
+}
+
+.fourth_paragraph table.computer td{
+    padding: 5px 20px 5px 10px;
+    border: 1px solid white;
+}
+
+form.calculation{
+    border: 1px solid white;
+    width: 320px;
+    padding: 10px;
+    line-height: 2rem;
+}
+
+.fourth_paragraph form.calculation input{
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding-left: 5px;
+}
+
+.fourth_paragraph select{
+    outline: none;
+}
+
+.fourth_paragraph button{
+    border-radius: 5px;
+    border: none;
+    width: 50px;
+    height: 30px;
+    background-color: #515B51;
+    color: white;
+    display: block;
+    margin: 10px 0 20px 0;
+    position: relative;
+}
+
+.fourth_paragraph button::after{
+    content: "";
+    position: absolute;
+    border-top: 1px solid white;
+    width: 320px;
+    bottom: -12px;
+    right: -258px;
+}
+
+form.calculation table.table_calculation{
+    /* border: 1px solid red; */
+    font-size: 1rem;
+    color: white;
+}
+
+form.calculation table.table_calculation td{
+    padding: 5px;
+}
+
+form.calculation table.table_calculation tr td:nth-child(2){
+    border: 1px solid white;
+    text-align: center;
+    width: 80px;
+}
+
+/* fifth */
+.fifth_paragraph{
+    margin-bottom: 30px;
+}
+
+.fifth_paragraph h2{
+    font-size: 1.5rem;
+    padding: 10px 0 10px 0;
+    color: #CC8C66;
+}
+
+/* sixth */
+.six_paragraph{
+    margin-bottom: 30px;
+}
+
+.six_paragraph h2{
+    font-size: 1.5rem;
+    padding: 10px 0 10px 0;
+    color: #CC8C66;
+}
+
+.six_paragraph p a{
+    /* text-decoration: none; */
+    color: #FFD700;
+}
+aside{
+    margin-top: 30px;
+}
+@media screen and (min-width: 992px){
+    header.cellphone{
+        display: none;
+    }
+    footer.cellphone_footer{
+        display: none;
+    }
+    div.fourth_paragraph div.bmr_cellphone{
+        display: none;
+    }
+    .fourth_paragraph table.cellphone{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1020px){
+    div.bread{
+        display: block;
+    }
+    div.bread div{
+        margin-top: 10px;
+    }
+    div.fourth_paragraph div.bmr_cellphone{
+        display: none;
+    }
+    .fourth_paragraph table.cellphone{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px){
+    aside{
+        display: none;
+    }
+    .main_container{
+        display: flex;
+        justify-content: center;;
+    }
+    main{
+        width: 100%;
+        padding: 20px;
+    }
+    main h1{
+        line-height: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 750px){
+    div.first_paragraph{
+        width: 300px;
+        border: 2px solid white;
+    }
+    div.fourth_paragraph div.bmr{
+        display: none;
+    }
+    div.fourth_paragraph div.bmr_cellphone{
+        /* display: none; */
+        font-size: 1rem;
+        display: block;
+    }
+    div.fourth_paragraph div.bmr_cellphone p{
+        border: 1px solid white;
+        /* width: 600px; */
+        padding: 5px;
+    }
+    
+    div.fourth_paragraph div.bmr_cellphone{
+        margin-bottom: 30px;
+    }
+    
+    div.fourth_paragraph div.bmr_cellphone p:first-child{
+        background-color: #5A5560;
+    }
+    table.computer{
+        display: none;
+    }
+    .fourth_paragraph table.cellphone{
+        display: block;
+        /* border: 1px solid white; */
+        margin-bottom: 30px;
+        margin: 0 auto;
+    }
+    
+    .fourth_paragraph table.cellphone th{
+        border: 1px solid white;
+        padding: 10px;
+        text-align: start;
+        background-color: #5A5560;
+    }
+    
+    .fourth_paragraph table.cellphone td{
+        padding: 10px 20px 10px 10px;
+        border: 1px solid white;
+    }
+    .fourth_paragraph form.calculation div table.table_calculation tr td{
+        /* padding: 0; */
+    }
+    
+}

@@ -1,0 +1,103 @@
+main{
+    background: 
+    linear-gradient(115deg ,#10000C 60%, transparent 40%),
+    url("../image/contentme/修杰楷.png");
+    background-size: contain;
+    background-position: 0 0, right 0 top 0;
+    background-repeat: no-repeat;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.main_container{
+    margin: auto 0;
+    margin-left: 10px;
+    height: auto;
+    width: 50%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.block{
+    width: 50%;
+}
+
+main .main_container p.computer{
+    width: 450px;
+    margin: 0 auto;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5em;
+    padding-top: 30px;
+}
+
+main .main_container p.cellphone{
+    display: none;
+}
+
+.reply{
+    color: white;
+    width: 450px;
+    /* border: 1px solid green; */
+    align-self: center;
+}
+
+.reply div label.reply{
+    /* letter-spacing: .25em; */
+    vertical-align: top;
+    padding-bottom: 10px;
+    /* border: 1px solid yellow; */
+}
+
+.reply div{
+    padding: 20px 0;
+    /* border: 1px solid white; */
+    width: 450px;
+}
+
+.reply_btn{
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    /* border: 1px solid orange; */
+}
+
+input{
+    color: white;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid gray;
+    height: 30px;
+    border-radius: 10px;
+    padding: 0 10px;
+    width: 410px;
+    /* border: 1px solid lightgray; */
+}
+
+input:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0 30px #10000C inset !important;
+    -webkit-text-fill-color: white !important;
+}
+
+textarea{
+    color: white;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid gray;
+    padding: 10px 10px;
+    border-radius: 10px;
+    /* border: 1px solid pink; */
+    width: 410px;
+}
+
+.btn button{
+    width: 100px;
+    height: 30px;
+    width: 435px;
+    /* border: 1px solid purple; */
+}

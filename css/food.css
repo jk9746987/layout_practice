@@ -1,0 +1,96 @@
+body{
+    background-image: url("../image/food/table.jpg");
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat-y;
+    background-size: cover;
+}
+
+main{
+    line-height: 1.3rem;
+    margin-bottom: 20px;
+}
+
+H3{
+    font-size: 2rem;
+    text-align: center;
+    color: #CC8C66;
+    width: 150px;
+    margin: 20px auto;
+    background-color: #642100;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main > p{
+    text-align: center;
+    margin: 20px auto;
+    background-color: #642100;
+    padding: 10px 20px;
+    width: 450px;
+    color: white;
+    border-radius: 10px;
+}
+
+.background_table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.background_table > div:nth-child(n){
+    display: flex;
+    width: 800px;
+    align-items: center;
+}
+
+.background_table > div:nth-child(2n){
+    width: 800px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.background_table > div{
+    height: 200px;
+}
+
+.background_table div a{
+    width: 200px;
+    margin: auto 30px;
+}
+
+.background_table div a img{
+    width: 200px;
+}
+
+.background_table div a img:hover{
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+
+.background_table div p{
+    color: white;
+    background-color: #642100;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.page{
+    width: 300px;
+    margin: 0 auto;
+}
+
+.page div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.page div p a{
+    margin: 5px;
+    text-decoration: none;
+    color: white;
+    padding: 4px 10px;
+    background-color: #642100;
+    border-radius: 20px;
+}

@@ -1,0 +1,63 @@
+aside{
+    width: 300px;
+    padding: 0 20px 20px 20px;
+}
+
+aside div{
+    color: white;
+}
+
+aside div h4{
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+aside div h4::before{
+    content:"________";
+    position: absolute;
+    right: 0;
+    top: -12px;
+    
+}
+
+aside div h4::after{
+    content:"________";
+    position: absolute;
+    left: 0;
+    top: -12px;
+}
+
+aside div ol{
+    list-style: initial;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    line-height: 1.5rem;
+}
+
+aside div ol a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.7rem;
+}
+
+aside div>div{
+    font-size: 30px;
+    /* width: 300px; */
+}
+
+aside div div img{
+    width: 100%;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+aside div div p{
+    background-color: #5A5560;
+    text-align: center;
+    padding: 5px;
+    line-height: 30px;
+    border-radius: 0 0 10px 10px;
+    font-size: 1rem;
+}

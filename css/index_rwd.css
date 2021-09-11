@@ -1,0 +1,218 @@
+@media screen and (min-width: 992px){
+    header.cellphone{
+        display: none;
+    }
+    main.cellphone_main{
+        display: none;
+    }
+    footer.cellphone_footer{
+        display: none;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width: 991px){
+    main.cellphone_main{
+        display: none;
+    }
+    main.homepage_main{
+        display: none;
+    }
+    footer.homepage_footer{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 575px){
+    main.homepage_main{
+        display: none;
+    }
+    footer.homepage_footer{
+        display: none;
+    }
+    main div.banner{
+        background-image: url("../image/index/equipment_back.png");
+        max-width: 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+        font-size: 0;
+        margin: 0 auto;
+        background-position: center;
+    }
+    main div.banner .banner_txt{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px;
+    }
+    main div.banner .banner_txt H1{
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 1.5rem;
+        align-items: center;
+        flex-basis: 600px;
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+    main div.banner .banner_txt p{
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        align-items: center;
+        flex-basis: 600px;
+    }
+    div.cell_main_container{
+        font-size: 0;
+        margin-top: 30px;
+    }
+    .cell_main_container h1{
+        font-size: 1.5rem;
+        color: white;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .cell_main_container h2{
+        background-color: #5A5560;
+        font-size: 1rem;
+        width: 150px;
+        margin: 20px auto;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        position: relative;
+    }
+    .cell_main_container h2::after{
+        content:"";
+        width: 300px;
+        border-top: 2px solid #5A5560;
+        position: absolute;
+        right: -50%;
+        top: 170%;
+    }
+    .cell_main_container h2 a{
+        color: white;
+        text-decoration: none;
+    }
+    .cell_main_container h3{
+        background-color: #5A5560;
+        font-size: 1rem;
+        width: 150px;
+        margin: 20px auto;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .cell_main_container h3 a{
+        color: white;
+        text-decoration: none;
+    }
+    .main_block{
+        width: 300px;
+        border: 2px solid white;
+        margin: 15px auto;
+        margin-bottom: 25px;
+        box-shadow: 5px 8px 5px #5A5560;
+    }
+    .main_block a{
+        text-decoration: none;
+    }
+    .main_block a ul li.block_h3 img{
+        width:100%;
+    }
+    .main_block a ul li.block_txt{
+        color: white;
+        font-size: 1rem;
+        padding: 10px 5px 10px 5px;
+        line-height: 1.5rem;
+        text-align: center;
+        border-top: 2px solid white;
+    }
+    .cellphone_read{
+        display: flex;
+        font-size: 0;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+    .cellphone_read .read_block{
+        border: 2px solid white;
+        width: 150px;
+        margin: 10px;
+        box-shadow: 5px 8px 5px #5A5560;
+    }
+    .cellphone_read .read_block a{
+        text-decoration: none;
+    }
+    .cellphone_read .read_block a ul li img{
+        width: 100%;
+        height: 210px;
+    }
+    .cellphone_read .read_block a ul li.block_txt{
+        color: white;
+        font-size: 1rem;
+        text-align: center;
+        padding: 10px;
+        border-top: 2px solid white;
+    }
+    .cell_main_container div.cellphone_food{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .cell_main_container div.cellphone_food p{
+        color: white;
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+    .cell_main_container div.cellphone_food div.food_block{
+        width: 300px;
+        border: 2px solid white;
+        margin: 15px auto;
+        margin-bottom: 25px;
+        box-shadow: 5px 8px 5px #5A5560;
+    }
+    .cell_main_container div.cellphone_food a{
+        text-decoration: none;
+        color: white;
+    }
+    .cell_main_container div.cellphone_food a ul li img{
+        width: 100%;
+    }
+    .cell_main_container div.cellphone_food a li.block_txt{
+        border-top: 2px solid white;
+        color: white;
+        font-size: 1rem;
+        text-align: center;
+        padding: 10px 5px 10px 5px;
+    }
+    .cell_main_container div.cellphone_gym{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .cell_main_container div.cellphone_gym p{
+        color: white;
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+    .cell_main_container div.cellphone_gym div.gym_block{
+        width: 300px;
+        border: 2px solid white;
+        margin: 15px auto;
+        margin-bottom: 25px;
+        box-shadow: 5px 8px 5px #5A5560;
+    }
+    .cell_main_container div.cellphone_gym a{
+        text-decoration: none;
+        color: white;
+    }
+    .cell_main_container div.cellphone_gym a ul li img{
+        width: 100%;
+    }
+    .cell_main_container div.cellphone_food a li.block_txt{
+        border-top: 2px solid white;
+        color: white;
+        font-size: 1rem;
+        text-align: center;
+        padding: 10px 5px 10px 5px;
+    }
+}

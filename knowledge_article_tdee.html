@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lnag="zh-hant">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/index.css" rel="stylesheet">
+    <link href="./css/aside.css" rel="stylesheet">
+    <link href="./css/tdee&bmr.css" rel="stylesheet">
+    <link href="./css/nav&footer.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <title>雙北健身去</title>
+    <style>
+        .homepage_header div.list_container:nth-child(1) > a::after{
+        content:"";
+        position: absolute;
+        top: 28px;
+        left: 53px;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 7px solid #CC8C66;
+        border-bottom: 7px solid transparent;
+    }
+    </style>
+</head>
+<body>
+    <header class="homepage_header">
+        <div class="header_container">
+            <a href="./index.html" class="logo">
+                <img src="./image/index/logo.png">
+            </a>
+            <nav class="header_nav">
+                <div class="list_container">
+                    <a href="./knowledge.html" style="color: #CC8C66">動知識</a>
+                    <ul class="list">
+                        <li><a href="./knowledge.html">伸展、放鬆</a></li>
+                        <li><a href="./knowledge.html">增肌、減脂</a></li>
+                        <li><a href="./knowledge.html">營養相關</a></li>
+                        <li><a href="./knowledge.html">其它相關</a></li>
+                    </ul>
+                    <p class="straight_line"></p>
+                </div>
+                <div class="list_container">
+                    <a href="./training.html">動教室</a>
+                    <ul class="list">
+                        <li><a href="./training.html">上肢</a></li>
+                        <li><a href="./training.html">下肢</a></li>
+                        <li><a href="./training.html">核心&腹</a></li>
+                        <li><a href="./training.html">其它</a></li>
+                    </ul>
+                    <p class="straight_line"></p>
+                </div>
+                <a href="./people.html">健身導讀<p class="first"></p></a>
+                <a href="./gym.html">健身館<p class="second"></p></a>
+                <a href="./food.html">健身餐<p class="third"></p></a>
+                <a href="./contentme.html">我要推薦<p></p></a>
+            </nav>
+            <form class="search">
+                <input type="search" name="" id="">
+                <button><img src="./image/index/magnifier.png" class="search_btn"></button>
+            </form>
+        </div>
+    </header>
+    <header class="cellphone">
+        <div class="cellphone_container">
+            <div class="hamburger_container">
+                <div class="hamburger"></div>
+            </div>
+            <nav class="cellphone_nav">
+                <a href="./index.html" class="logo">
+                    <img src="./image/index/logo.png">
+                </a>
+                <div class="cellphone_nav_container">
+                    <div class="fork">
+                        <div></div>
+                    </div>
+                    <div class="a_list">
+                        <a href="./knowledge.html" style="color: #e4ff2e;">動知識</a>
+                        <!-- <span id="arrow_1"></span> -->
+                    </div>
+                    <ul id="list_1">
+                        <li><a href="./knowledge.html">伸展、放鬆</a></li>
+                        <li><a href="./knowledge.html">增肌、減脂</a></li>
+                        <li><a href="./knowledge.html">營養相關</a></li>
+                        <li><a href="./knowledge.html">其它相關</a></li>
+                    </ul>
+                    <div class="a_list">
+                        <a href="./training.html">動教室</a>
+                        <!-- <span id="arrow_2"></span> -->
+                    </div>
+                    <ul id="list_2">
+                        <li><a href="./training.html">上肢</a></li>
+                        <li><a href="./training.html">下肢</a></li>
+                        <li><a href="./training.html">核心&腹</a></li>
+                        <li><a href="./training.html">其它</a></li>
+                    </ul>
+                    <a href="./people.html">健身導讀<p class="first"></p></a>
+                    <a href="./gym.html">健身館<p class="second"></p></a>
+                    <a href="./food.html">健身餐<p class="third"></p></a>
+                    <a href="./contentme.html">我要推薦<p></p></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="main_container">
+        <main>
+            <h1>每日消耗熱量，TDEE，如何算？</h1>
+            <div class="bread">
+                <p>撰寫日期：2021/05/02 22:00</p>
+                <div>
+                    <a href="./index.html">首頁&nbsp&nbsp>></a>
+                    <a href="./knowledge.html">動知識&nbsp&nbsp>></a>
+                    <a href="./knowledge.html">營養相關&nbsp&nbsp>></a>
+                    <P>每日消耗熱量，TDEE，如何算？</P>
+                </div>
+            </div>
+            <div class="first_paragraph">
+                <h2>文章目錄</h2>
+                <ul>
+                    <li><a href="#first">1.認識基礎代謝率（BMR）</a></li>
+                    <li><a href="#second">2.認識每日消耗熱量（TDEE）</a></li>
+                    <li><a href="#third">3.BMR&TDEE計算方式</a></li>
+                    <li><a href="#forth">4.增肌與減脂的熱量如何抓？</a></li>
+                    <li><a href="#fifth">5.結語</a></li>
+                </ul>
+            </div>
+            <p class="main_body_txt"></p>
+            <div class="second_paragraph" id="first">
+                <h2>認識基礎代謝率（BMR）</h2>
+                <p>基礎代謝率（BMR），英文全名：Basal Metabolic Rate，是身體要維持最基本的運作所需要的熱量，
+                也就是人體一整天不吃也不喝，躺在床上，也會消耗這麼多的熱量，BMR並不是一個固定的值，
+                而是會隨著「體重、身高、性別、年齡、肌肉量」等等因素
+                而去變化，尤其BMR會隨著「年紀」增長而漸漸變低，我們能做的就是提高「肌肉量」讓BMR提高，
+                否則年紀到了一定程度之後，BMR降低卻維持原本的飲食習慣，會使脂肪容易堆疊，出現體重增加的狀況。
+                </p>
+            </div>
+            <div class="third_paragraph" id="second">
+                <h2>認識每日消耗熱量（TDEE）</h2>
+                <p>每日消耗熱量（TDEE)），英文全名：Total Daily Energy Expenditure，由四個要素組成，分別為：<br>
+                    1.基礎代謝率（BMR）：如上述。<br>
+                    2.食物生熱效應（TEF）：英文全名：Thermic Effect of Feeding，為食物消耗與吸收時所消耗的熱量。<br>
+                    3.日常活動消耗熱量（NEAT）：英文全名：Non-Exercise Activity Thermogenesis，為日常活動所消耗的熱量，EX：走路、站立、勞動等等。<br>
+                    4.運動消耗熱量（TEA）：英文全名：Thermic Effect of Activity，為生活中運動所消耗的熱量，EX：跑步、運動、健身等等。<br>
+                    上述四項所消耗的熱量加總即為TDEE。<br>
+                    如果要確切抓到自己的TDEE是滿困難的事情，畢竟不是每天固定的值，下面會和大家說明要如何做觀察。
+                </p>
+            </div>
+            <div class="fourth_paragraph" id="third">
+                <h2>BMR&TDEE計算方式：</h2>
+                <div class="bmr" id="bmr_computer_formula">
+                    <p>BMR有個能參考的公式，可分為男性及女性，如下：</p>
+                    <p>男性：66&nbsp+&nbsp（13.7&nbsp×&nbsp體重（kg）&nbsp+&nbsp5&nbsp×&nbsp身高（公分）&nbsp-&nbsp6.8&nbsp×&nbsp年齡）</p>
+                    <p>女性：655&nbsp+&nbsp（9.6&nbsp×&nbsp體重（kg）&nbsp+&nbsp1.8&nbsp×&nbsp身高（公分）&nbsp-&nbsp4.7&nbsp×&nbsp年齡）</p>
+                </div>
+                <div class="bmr_cellphone" id="bmr_cellphone_formula">
+                    <p>BMR有個能參考的公式，可分為男性及女性，如下：</p>
+                    <p>男性：66&nbsp+&nbsp（13.7&nbsp×&nbsp體重（kg）&nbsp+&nbsp5&nbsp×&nbsp身高（公分）&nbsp-&nbsp6.8&nbsp×&nbsp年齡）</p>
+                    <p>女性：655&nbsp+&nbsp（9.6&nbsp×&nbsp體重（kg）&nbsp+&nbsp1.8&nbsp×&nbsp身高（公分）&nbsp-&nbsp4.7&nbsp×&nbsp年齡）</p>
+                </div>
+                <p style="color: #CC8C66;font-size:1.5rem;margin:10px 0;">TDEE可參考的公式如下：</p>
+                <table class="computer">
+                    <tr>
+                        <th>活動量敘述</th>
+                        <th>TDEE計算</th>
+                    </tr>
+                    <tr>
+                        <td>久坐、幾乎沒運動</td>
+                        <td>BMR*1.2</td>
+                    </tr>
+                    <tr>
+                        <td>每週低強度運動1-3天</td>
+                        <td>BMR*1.375</td>
+                    </tr>
+                    <tr>
+                        <td>每週中強度運動3-5天</td>
+                        <td>BMR*1.55</td>
+                    </tr>
+                    <tr>
+                        <td>每週高強度運動6-7天</td>
+                        <td>BMR*1.725</td>
+                    </tr>
+                    <tr>
+                        <td>勞力密集工作或是每天高強度訓練</td>
+                        <td>BMR*1.9</td>
+                    </tr>
+                </table>
+                <table class="cellphone">
+                    <tr>
+                        <th>活動量敘述</th>
+                        <th>TDEE計算</th>
+                    </tr>
+                    <tr>
+                        <td>久坐、幾乎沒運動</td>
+                        <td>BMR*1.2</td>
+                    </tr>
+                    <tr>
+                        <td>每週低強度運動1-3天</td>
+                        <td>BMR*1.375</td>
+                    </tr>
+                    <tr>
+                        <td>每週中強度運動3-5天</td>
+                        <td>BMR*1.55</td>
+                    </tr>
+                    <tr>
+                        <td>每週高強度運動6-7天</td>
+                        <td>BMR*1.725</td>
+                    </tr>
+                    <tr>
+                        <td>勞力密集工作或是每天高強度訓練</td>
+                        <td>BMR*1.9</td>
+                    </tr>
+                </table>
+                <p style="color: #CC8C66;font-size:1.5rem;margin:10px 0;">下列有BMR、TDEE計算機可供使用</p>
+                <form action="#" method="#" class="calculation">
+                    <label for="height">身高：</label>
+                    <input type="number" value="" placeholder="請輸入數字(公分)" id="height"><br>
+                    <label for="weight">體重：</label>
+                    <input type="number" value="" placeholder="請輸入數字(公斤)" id="weight"><br>
+                    <label for="age">年紀：</label>
+                    <input type="number" value="" placeholder="請輸入數字(年齡)" id="age"><br>
+                    <div>性別：
+                        <label class="gender">
+                            <input type="radio" name="gender" value="1" checked class="sex" id="man">
+                            男
+                        </label>
+                        <label class="gender">
+                            <input type="radio" name="gender" value="2" class="sex" id="woman">
+                            女
+                        </label>
+                        <p>日常活動量：</p>
+                        <select name="activity" id="activity">
+                            <option value="1" selected="selected" class="bmr_reply">久坐、幾乎沒運動</option>
+                            <option value="2" class="bmr_reply">每週低強度運動1-3天</option>
+                            <option value="3" class="bmr_reply">每週中強度運動3-5天</option>
+                            <option value="4" class="bmr_reply">每週高強度運動6-7天</option>
+                            <option value="5" class="bmr_reply">勞力密集工作或是每天高強度訓練</option>
+                        </select>
+                        <button type="button" id="bmr_tdee_btn">計算</button>
+                        <table class="table_calculation">
+                            <tr id="bmr">
+                                <td>基礎代謝率（BMR）：</td>
+                                <td id="bmr_math"></td>
+                            </tr>
+                            <tr id="tdee">
+                                <td>每日總消耗熱量（TDEE）：</td>
+                                <td id="tdee_math"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+            </div>
+            <div class="fifth_paragraph" id="forth">
+                <h2>增肌與減脂的熱量如何抓？</h2>
+                <p>首先要先理解，每攝取7700卡會增加一公斤的體重，不論是增肌或是減脂，都是需要循序漸進的，
+                    以一天減少300卡來說，大約25天就能夠減少一公斤的體重，簡單來說，
+                    就是製造熱量赤字或著是熱量盈餘，但不要為了走捷徑就每天少吃很多東西，減少大量的熱量攝取
+                    太極端的熱量赤字，會導致BMR下降，使減脂效果變差，容易遇上停滯期，
+                    且會容易復胖，增肌也同理，為了快速増肌而增加過多熱量攝取，可能導致脂肪堆疊變成增脂，
+                    建議熱量赤字與盈餘設定在500卡以內，並以一週或兩週為期，
+                    做體重以及照鏡子自拍做觀察，相信有控制得宜，一定會有所改變。
+                </p>
+            </div>
+            <div class="six_paragraph" id="fifth">
+                <h2>結語</h2>
+                <p>有關食物的攝取，碳水化合物、蛋白質、脂肪該如何做分配，可參考「<a href="#">想增肌與減脂？從學會算熱量開始</a>」
+                ，將飲食做好才能讓訓練事半功倍，大家加油！
+                </p>
+            </div>
+        </main>
+        <aside>
+            <div>
+                <h4>熱門文章</h4>
+                <ol>
+                    <li><a href="./knowledge_article_tdee.html">健身五大動作－胸推篇</a></li>
+                    <li><a href="./knowledge_article_tdee.html">肚子好團結，打造立體六塊肌</a></li>
+                    <li><a href="./knowledge_article_tdee.html">拼命訓練卻看不到成效，你忽略了幾件事</a></li>
+                    <li><a href="./knowledge_article_tdee.html">想增肌與減脂，從認識熱量開始</a></li>
+
+                </ol>
+                <h4>近期文章</h4>
+                <ol>
+                    <li><a href="./knowledge_article_tdee.html">胸部訓練百百種，打造立體胸肌所需的動作都在這</a></li>
+                    <li><a href="./knowledge_article_tdee.html">背部訓練百百種，打造倒三角所需的動作都在這</a></li>
+                    <li><a href="./knowledge_article_tdee.html">大隻佬好噁心，我不想練太壯</a></li>
+                    <li><a href="./knowledge_article_tdee.html">每天好忙，訓練時間好少，如何安排訓練計畫？</a></li>
+                </ol>
+                <h4>激勵標語</h4>
+                <div>
+                    <img src="image/index/大H.png">
+                    <p>不是你不夠努力<br>是努力的不夠久</p>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <footer class="homepage_footer">
+        <div class="footer_container">
+            <p>
+            參考資源：<a href="https://www.peeta.tw/">一、PEATA健身網</a><br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://www.sportsplanetmag.com/">二、運動星球</a><br>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://fitz.hk/">三、FITZ運動平台</a>
+            </p>
+            <div class="footer_icon">
+                <p style="color: white;">追隨我們</p>
+                <a href="https://www.facebook.com/"><img src="./image/index/fb.png"></a>
+                <a href="https://www.instagram.com/"><img src="./image/index/ig.png"></a>
+                <a href="https://www.youtube.com/"><img src="./image/index/youtube.png"></a>
+            </div>
+        </div>
+    </footer>
+    <footer class="cellphone_footer">
+        <div class="footer_block">
+            <p class="icon_txt">追隨我們</p>
+            <div class="footer_icon">
+                <a href="https://www.facebook.com/"><img src="image/index/fb.png"></a>
+                <a href="https://www.instagram.com/"><img src="image/index/ig.png"></a>
+                <a href="https://www.youtube.com/"><img src="image/index/youtube.png"></a>
+            </div>
+            <p class="footer_txt">
+            參考資源：<br>
+            <a href="https://www.peeta.tw/">一、PEATA健身網</a><br>
+            <a href="https://www.sportsplanetmag.com/">二、運動星球</a><br>
+            <a href="https://fitz.hk/">三、FITZ運動平台</a>
+            </p>
+        </div>
+    </footer>
+    <script>
+        let nav = new TimelineMax();
+        nav.to(".cellphone_nav_container", .5,{
+            right: 0
+
+        }).to(".hamburger_container", .1,{
+            opacity: 0
+        }).to([".cellphone_nav_container div.a_list a", ".cellphone_nav_container > a", ".cellphone_nav_container div.a_list span"], .5,{
+            opacity: 1
+        },.3).to(".fork", 1,{
+            opacity: 1
+        },.3)
+        
+
+        nav.stop();
+        let open = document.querySelector(".hamburger_container");
+        let close = document.querySelector(".fork");
+        open.addEventListener("click", function(){
+            nav.play();
+        });
+        close.addEventListener("click", function(){
+            nav.reverse();
+        });
+
+        let btn = document.getElementById("bmr_tdee_btn");
+        btn.addEventListener("click", function(){
+            let bmr_math = document.getElementById("bmr_math");
+            let tdee_math = document.getElementById("tdee_math");
+            let height = document.getElementById("height").value;
+            let weight = document.getElementById("weight").value;
+            let age = document.getElementById("age").value;
+            let man = document.getElementById("man");
+            let woman = document.getElementById("woman");
+            let bmr_option = document.getElementById("activity").value;
+            // console.log(bmr_option);
+            if(man.checked === true){
+                if(bmr_option == 1){
+                    // console.log("hahaha");
+                    let answer = 66 + 13.7 * weight + 5 * height - 6.8 * age;
+                    bmr_math.innerHTML = answer;
+                    tdee_math.innerHTML = (answer * 1.2).toFixed(2);
+                }else if(bmr_option == 2){
+                    let answer = 66 + 13.7 * weight + 5 * height - 6.8 * age;
+                    bmr_math.innerHTML = answer;
+                    tdee_math.innerHTML = (answer * 1.375).toFixed(2);
+                }
+                else if(bmr_option == 3){
+                    let answer = 66 + 13.7 * weight + 5 * height - 6.8 * age;
+                    bmr_math.innerHTML = answer;
+                    tdee_math.innerHTML = (answer * 1.55).toFixed(2);
+                }
+                else if(bmr_option == 4){
+                    let answer = 66 + 13.7 * weight + 5 * height - 6.8 * age;
+                    bmr_math.innerHTML = answer;
+                    tdee_math.innerHTML = (answer * 1.725).toFixed(2);
+                }
+                else if(bmr_option == 5){
+                    let answer = 66 + 13.7 * weight + 5 * height - 6.8 * age;
+                    bmr_math.innerHTML = answer;
+                    tdee_math.innerHTML = (answer * 1.9).toFixed(2);
+                }
+            }else{
+                if(bmr_option == 1){
+                    // console.log("hahaha");
+                    let answer = 655 + 9.6 * weight + 1.8 * height - 4.7 * age;
+                    bmr_math.innerHTML = answer;
+                    tdee_math.innerHTML = (answer * 1.2).toFixed(2);
+                }else if(bmr_option == 2){
+                    let answer = 655 + 9.6 * weight + 1.8 * height - 4.7 * age;
+                    bmr_math.innerHTML = answer;
+                    tdee_math.innerHTML = (answer * 1.375).toFixed(2);
+                }
+                else if(bmr_option == 3){
+                    let answer = 655 + 9.6 * weight + 1.8 * height - 4.7 * age;
+                    bmr_math.innerHTML = answer;
+                    tdee_math.innerHTML = (answer * 1.55).toFixed(2);
+                }
+                else if(bmr_option == 4){
+                    let answer = 655 + 9.6 * weight + 1.8 * height - 4.7 * age;
+                    bmr_math.innerHTML = answer;
+                    tdee_math.innerHTML = (answer * 1.725).toFixed(2);
+                }
+                else if(bmr_option == 5){
+                    let answer = 655 + 9.6 * weight + 1.8 * height - 4.7 * age;
+                    bmr_math.innerHTML = answer;
+                    tdee_math.innerHTML = (answer * 1.9).toFixed(2);
+                }
+            }
+
+        })
+
+    </script>
+</body>
+</html>

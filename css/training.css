@@ -1,0 +1,125 @@
+h1{
+    font-size: 2rem;
+    text-align: center;
+    margin: 15px auto;
+    color: white;
+}
+
+div.bread{
+    text-align: center;
+    color: white;
+    margin: 15px auto;
+}
+
+div.bread a{
+    text-decoration: none;
+    color: #EFA747;
+    font-size: 0.5rem;
+}
+
+div.bread a:hover{
+    color: white;
+}
+
+div.bread p{
+    display: inline-block;
+    font-size: 0.5rem;
+}
+
+.main_sort{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 15px auto;
+}
+
+.main_sort a{
+    text-decoration: none;
+}
+
+.main_sort span{
+    margin: 5px 20px;
+    background-color: #5A5560;
+    color: white;
+    padding: 15px 15px;
+    border-radius: 100px;
+    width: 130px;
+    display: inline-block;
+}
+
+.main_sort span:hover{
+    color: #EFA747;
+}
+
+.main_container{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+main{
+    width: calc(100% - 300px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main .a_container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* height: 900px; */
+    width: 1200px;
+    /* align-content: center; */
+}
+
+main .main_block{
+    width: 260px;
+    padding: 0 5px;
+    height: 200px;
+}
+
+main a{
+    text-decoration: none;
+    color: white;
+    width: 260px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+main .main_block .block_img{
+    border: 3px #EFA747 solid;
+    height: 150px;
+}
+
+main .main_block .block_img img{
+    width: 100%;
+    height: 144px;
+}
+
+main .main_block .block_txt{
+    border: 3px #EFA747 solid ;
+    text-align: center;
+    padding: 5px 0;
+    line-height: 1.2rem;
+    background-color: #5A5560;
+}
+
+@media screen and (min-width: 992px){
+    header.cellphone{
+        display: none;
+    }
+    footer.cellphone_footer{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px){
+    aside{
+        display: none;
+    }
+    div.main_sort{
+        display: none;
+    }
+}

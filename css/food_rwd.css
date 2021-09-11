@@ -1,0 +1,153 @@
+@media screen and (min-width: 992px){
+    header.cellphone{
+        display: none;
+    }
+    footer.cellphone_footer{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 991px){
+    div.background_table{
+        display: flex;
+    }
+    main p{
+        width: 340px;
+        text-align: start;
+    }
+    div.background_table > div:nth-child(n){
+        display: flex;
+        flex-direction: column;
+        margin: 20px 10px;
+        border: 5px solid black;
+        height: 330px;
+        width: 330px;
+        text-align: center;
+    }
+    div.background_table > div:nth-child(2n){
+        display: flex;
+        flex-direction: column;
+        margin: 20px 10px;
+        width: 330px;
+        border: 5px solid black;
+        height: 380px;
+        text-align: center;
+    }
+    .background_table div:nth-child(2n) a{
+        order: 1;
+    }
+    .background_table div p{
+        /* border: 10px solid black; */
+        width: 300px;
+        margin: 0 auto;
+        text-align: start;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    .background_table div p::after{
+        content:"";
+        /* background: black; */
+        border-top: 4px solid black;
+        width: 335px;
+        position: absolute;
+        top: -10px;
+        left: -2%;
+    }
+    .background_table div:nth-child(2n) p{
+        order: 2;
+    }
+    .background_table div a img:hover{
+        transform: scale(1);
+    }
+    .background_table div a{
+        position: relative;
+    }
+    .background_table div a::before{
+        content:"";
+        background-image: url("../image/food/fork.png");
+        height: 150%;
+        background-size: contain;
+        position: absolute;
+        left: 65%;
+        top: -30px;
+        width: 200px;
+        background-repeat: no-repeat;
+    }
+    .background_table div a::after{
+        content:"";
+        background-image: url("../image/food/spoon.png");
+        height: 100%;
+        background-size: contain;
+        position: absolute;
+        right: 75%;
+        top: 0;
+        width: 150px;
+        background-repeat: no-repeat;
+    }
+    .background_table div:nth-child(2) a::before{
+        content:"";
+        background-image: url("../image/food/fork.png");
+        height: 150%;
+        background-size: contain;
+        position: absolute;
+        left: 40%;
+        top: -30px;
+        width: 260px;
+        background-repeat: no-repeat;
+    }
+    .background_table div:nth-child(2) a::after{
+        content:"";
+        background-image: url("../image/food/spoon.png");
+        height: 100%;
+        background-size: contain;
+        position: absolute;
+        right: 60%;
+        top: 0;
+        width: 195px;
+        background-repeat: no-repeat;
+    }
+    .background_table div:nth-child(3) a::before{
+        content:"";
+        background-image: url("../image/food/fork.png");
+        height: 130%;
+        background-size: contain;
+        position: absolute;
+        left: 65%;
+        top: -20%;
+        width: 260px;
+        background-repeat: no-repeat;
+    }
+    .background_table div:nth-child(3) a::after{
+        content:"";
+        background-image: url("../image/food/spoon.png");
+        height: 90%;
+        background-size: contain;
+        position: absolute;
+        right: 40%;
+        top: 0;
+        width: 195px;
+        background-repeat: no-repeat;
+    }
+    .background_table div:nth-child(4) a::before{
+        content:"";
+        background-image: url("../image/food/fork.png");
+        height: 150%;
+        background-size: contain;
+        position: absolute;
+        left: 45%;
+        top: -30px;
+        width: 240px;
+        background-repeat: no-repeat;
+    }
+    .background_table div:nth-child(4) a::after{
+        content:"";
+        background-image: url("../image/food/spoon.png");
+        height: 100%;
+        background-size: contain;
+        position: absolute;
+        right: 60%;
+        top: 0;
+        width: 195px;
+        background-repeat: no-repeat;
+    }
+}
